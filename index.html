@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLATIZA</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<link rel="shorting icon" href="recurses/Logo.ico.ico" type="image/x-icon">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="recet.css">
+<body>
+    <header>
+        <div class="inside-header">
+            <img src="recurses/logo.svg" alt="логотип компании" class="logo">
+
+            <div class="menu">
+                <ul>
+                    <li class="li-menu">О компании</li>
+                    <li class="li-menu">Как получить деньги</li>
+                    <li class="li-menu">Как погасить заём</li>
+                    <li class="li-menu">Зарплата вперед</li>
+                </ul>
+            </div>
+
+            <button class="open-btn" type="button">
+                <img src="recurses/open.svg" alt="логотип входа в личный кабинет" class="open-img">
+                <p class="open-p">Войти</p>
+            </button>
+        </div>
+    </header>
+
+    <div class="conteiner-welcome">
+        <img src="recurses/hand-ok.png" alt="картинка руки" class="img-hand">
+    
+        <div class="block-text">
+            <h1>ZERO —
+                значит <span>0!</span></h1>
+            <p class="p-block">Первый заём с промокодом "ZERO" - бесплатно! *</p>
+            <p class="p-dop">(активируйте промокод в Вашем Личном кабинете)</p>
+        </div>
+    
+        <div class="conteiner-form">
+            <div class="block-btn">
+                <button class="btn-green">Первый заём</button>
+                <button class="bth-white">Повторный заём</button>
+            </div>
+            <form action="#!">
+                <div class="block-cent">
+                    <legend>Сумма</legend>
+                    <input type="range" value="1000" min="1000" max="50000"
+                        oninput="this.nextElementSibling.value = this.value">
+                    <output>1000</output> <label for="text">рублей</label>
+                </div>
+                <div class="block-date">
+                    <legend>На срок</legend>
+                    <input type="range" value="1" min="10" max="365" oninput="this.nextElementSibling.value = this.value">
+                    <output>10</output> <label for="text">дней</label>
+                </div>
+    
+                <div class="form-text">
+                    <div class="cent">
+                        <p class="form-text-p">Вы берете</p>
+                        <p class="form-nom">XXX руб.</p>
+                    </div>
+    
+                    <div class="cent">
+                        <p class="form-text-p">Cрок погашения</p>
+                        <p class="form-nom">XX месяца, 20XX</p>
+                    </div>
+    
+                    <div class="cent">
+                        <p class="form-text-p">Сумма к возврату</p>
+                        <p class="form-nom"><span class="span-form">XXX руб.</span></p>
+                    </div>
+                </div>
+    
+                <button class="btn-yellow">Подать заявку</button>
+    
+                <a href="#!" class="p-link" >Как не допустить просроченный задолженности
+                    Требования к заемщикам</a>
+                <p class="text-transf">Расчет носит ознакомительный характер
+                    Окончательные условия будут определены при подаче заявки в ЛК</p>
+            </form>
+        </div>
+    </div>
+
+
+
+   
+</body>
+</html>
