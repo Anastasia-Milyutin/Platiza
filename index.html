@@ -1,384 +1,550 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PLATIZA</title>
-</head>
-<link rel="stylesheet" href="style.css">
-<link rel="shorting icon" href="recurses/Logo.ico.ico" type="image/x-icon">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shorting icon" href="recurses/Logo.ico.ico" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap"
+    rel="stylesheet"
+  />
 
-<link rel="stylesheet" href="recet.css">
-<body>
+  <link rel="stylesheet" href="recet.css" />
+  <body>
     <header>
-        <div class="inside-header">
-            <img src="recurses/logo.svg" alt="логотип компании" class="logo">
+      <div class="inside-header">
+        <img src="recurses/logo.svg" alt="логотип компании" class="logo" />
 
-            <div class="menu">
-                <ul>
-                    <li class="li-menu">О компании</li>
-                    <li class="li-menu">Как получить деньги</li>
-                    <li class="li-menu">Как погасить заём</li>
-                    <li class="li-menu">Зарплата вперед</li>
-                </ul>
-            </div>
-
-            <button class="open-btn" type="button">
-                <img src="recurses/open.svg" alt="логотип входа в личный кабинет" class="open-img">
-                <p class="open-p">Войти</p>
-            </button>
+        <div class="menu">
+          <ul>
+            <li class="li-menu">О компании</li>
+            <li class="li-menu">Как получить деньги</li>
+            <li class="li-menu">Как погасить заём</li>
+            <li class="li-menu">Зарплата вперед</li>
+          </ul>
         </div>
+
+        <button class="open-btn" type="button">
+          <img
+            src="recurses/open.svg"
+            alt="логотип входа в личный кабинет"
+            class="open-img"
+          />
+          <p class="open-p">Войти</p>
+        </button>
+      </div>
     </header>
 
     <div class="conteiner-welcome">
-        <img src="recurses/hand-ok.png" alt="картинка руки" class="img-hand" loading="lazy">
-    
-        <div class="block-text">
-            <h1>ZERO —
-                значит <span>0!</span></h1>
-            <p class="p-block">Первый заём с промокодом "ZERO" - бесплатно! *</p>
-            <p class="p-dop">(активируйте промокод в Вашем Личном кабинете)</p>
+      <img
+        src="recurses/hand-ok.png"
+        alt="картинка руки"
+        class="img-hand"
+        loading="lazy"
+      />
+
+      <div class="block-text">
+        <h1>ZERO — значит <span>0!</span></h1>
+        <p class="p-block">Первый заём с промокодом "ZERO" - бесплатно! *</p>
+        <p class="p-dop">(активируйте промокод в Вашем Личном кабинете)</p>
+      </div>
+
+      <div class="conteiner-form">
+        <div class="block-btn">
+          <button class="btn-green">Первый заём</button>
+          <button class="bth-white">Повторный заём</button>
         </div>
-    
-        <div class="conteiner-form">
-            <div class="block-btn">
-                <button class="btn-green">Первый заём</button>
-                <button class="bth-white">Повторный заём</button>
+        <form action="#!">
+          <div class="block-cent">
+            <legend>Сумма</legend>
+            <input
+              type="range"
+              value="1000"
+              min="1000"
+              max="50000"
+              oninput="this.nextElementSibling.value = this.value"
+            />
+            <output>1000</output> <label for="text">рублей</label>
+          </div>
+          <div class="block-date">
+            <legend>На срок</legend>
+            <input
+              type="range"
+              value="1"
+              min="10"
+              max="365"
+              oninput="this.nextElementSibling.value = this.value"
+            />
+            <output>10</output> <label for="text">дней</label>
+          </div>
+
+          <div class="form-text">
+            <div class="cent">
+              <p class="form-text-p">Вы берете</p>
+              <p class="form-nom">XXX руб.</p>
             </div>
-            <form action="#!">
-                <div class="block-cent">
-                    <legend>Сумма</legend>
-                    <input type="range" value="1000" min="1000" max="50000"
-                        oninput="this.nextElementSibling.value = this.value">
-                    <output>1000</output> <label for="text">рублей</label>
-                </div>
-                <div class="block-date">
-                    <legend>На срок</legend>
-                    <input type="range" value="1" min="10" max="365" oninput="this.nextElementSibling.value = this.value">
-                    <output>10</output> <label for="text">дней</label>
-                </div>
-    
-                <div class="form-text">
-                    <div class="cent">
-                        <p class="form-text-p">Вы берете</p>
-                        <p class="form-nom">XXX руб.</p>
-                    </div>
-    
-                    <div class="cent">
-                        <p class="form-text-p">Cрок погашения</p>
-                        <p class="form-nom">XX месяца, 20XX</p>
-                    </div>
-    
-                    <div class="cent">
-                        <p class="form-text-p">Сумма к возврату</p>
-                        <p class="form-nom"><span class="span-form">XXX руб.</span></p>
-                    </div>
-                </div>
-    
-                <button class="btn-yellow">Подать заявку</button>
-    
-                <a href="#!" class="p-link" >Как не допустить просроченный задолженности
-                    Требования к заемщикам</a>
-                <p class="text-transf">Расчет носит ознакомительный характер
-                    Окончательные условия будут определены при подаче заявки в ЛК</p>
-            </form>
-        </div>
+
+            <div class="cent">
+              <p class="form-text-p">Cрок погашения</p>
+              <p class="form-nom">XX месяца, 20XX</p>
+            </div>
+
+            <div class="cent">
+              <p class="form-text-p">Сумма к возврату</p>
+              <p class="form-nom"><span class="span-form">XXX руб.</span></p>
+            </div>
+          </div>
+
+          <button class="btn-yellow">Подать заявку</button>
+
+          <a href="#!" class="p-link"
+            >Как не допустить просроченный задолженности Требования к
+            заемщикам</a
+          >
+          <p class="text-transf">
+            Расчет носит ознакомительный характер Окончательные условия будут
+            определены при подаче заявки в ЛК
+          </p>
+        </form>
+      </div>
     </div>
 
-
     <div class="conteiner-pros">
-        <h2>Наши преимущества</h2>
-        
-        <div class="blocks-pros_flex">
-            <div class="big-block">
-                <img src="recurses/check (64) 1.svg" alt="" class="logo_block-pros">
-                <p class="p-percent">90%</p>
-                <p class="p_big-block">одобрения</p>
-                <button class="btn-yellow btn_big-block">Подать заявку</button>
-            </div>
+      <h2>Наши преимущества</h2>
 
-            <div class="blocks-small_flex">
-                <div class="block-small">
-                    <img src="recurses/stopwatch (17) 1.svg" alt="" class="logo_small-block">
-                    <p class="p_small-block">Деньги за 1 минуту
-                        после одобрения</p>
-                </div>
-                <div class="block-small">
-                    <img src="recurses/calendar (42) 1.svg" alt="" class="logo_small-block">
-                    <p class="p_small-block">Продление
-                        без штрафов</p>
-                </div>
-                <div class="block-small">
-                    <img src="recurses/locked (3) 1.svg" alt="" class="logo_small-block">
-                    <p class="p_small-block">Безопасность
-                        персональных данных</p>
-                </div>
-                <div class="block-small">
-                    <img src="recurses/24-hours (4) 1.svg" alt="" class="logo_small-block">
-                    <p class="p_small-block">Погашение займа 24 часа
-                        Без комиссии</p>
-                </div>
-                <div class="block-small">
-                    <img src="recurses/crown (1) 1.svg" alt="" class="logo_small-block">
-                    <p class="p_small-block">Премиум услуги
-                        для постоянных клиентов</p>
-                </div>
-                <div class="block-small">
-                    <img src="recurses/stars (3) 1.svg" alt="" class="logo_small-block">
-                    <p class="p_small-block">Улучшение
-                        кредитной истории</p>
-                </div>
-            </div>
-            
-        </div>
-        </div>
-        
-        <div class="conteiner-instructions">
-            <h2>Получите заём просто</h2>
-            
-            <div class="block-punkt_flex">
-                <div class="block-punkt">
-                    <p class="number">1</p>
-                    <div class="block_punkt-p">
-                        <p class="punkt-p">Позвоните или оставьте заявку</p>
-                        <p class="dop-p">Оставить заявку можно <a href="" class="blue">заполнив форму</a> на сайте</p>
-                    </div>
-                </div>
-
-                <div class="block-punkt">
-                    <p class="number">2</p>
-                    <div class="block_punkt-p">
-                        <p class="punkt-p">Дождитесь принятия решения</p>
-                        <p class="dop-p">Решение принимается всего за 1 минуту</p>
-                    </div>
-                </div>
-
-                <div class="block-punkt">
-                    <p class="number">3</p>
-                    <div class="block_punkt-p">
-                        <p class="punkt-p">Получите деньги</p>
-                        <p class="dop-p">Мы переведем Вам деньги на карту</p>
-                    </div>
-                        
-                </div>
-            </div>
-            
-            <button class="btn-yellow btn_blocl-instru">оформить заявку</button>
-            <img src="recurses/hand 1.svg" alt="" class="hend_con-instructions" loading="lazy">
-            
+      <div class="blocks-pros_flex">
+        <div class="big-block">
+          <img src="recurses/check (64) 1.svg" alt="" class="logo_block-pros" />
+          <p class="p-percent">90%</p>
+          <p class="p_big-block">одобрения</p>
+          <button class="btn-yellow btn_big-block">Подать заявку</button>
         </div>
 
-        <div class="conteiner-cards">
-            <h2>Как погасить заём</h2>
+        <div class="blocks-small_flex">
+          <div class="block-small">
+            <img
+              src="recurses/stopwatch (17) 1.svg"
+              alt=""
+              class="logo_small-block"
+            />
+            <p class="p_small-block">Деньги за 1 минуту после одобрения</p>
+          </div>
+          <div class="block-small">
+            <img
+              src="recurses/calendar (42) 1.svg"
+              alt=""
+              class="logo_small-block"
+            />
+            <p class="p_small-block">Продление без штрафов</p>
+          </div>
+          <div class="block-small">
+            <img
+              src="recurses/locked (3) 1.svg"
+              alt=""
+              class="logo_small-block"
+            />
+            <p class="p_small-block">Безопасность персональных данных</p>
+          </div>
+          <div class="block-small">
+            <img
+              src="recurses/24-hours (4) 1.svg"
+              alt=""
+              class="logo_small-block"
+            />
+            <p class="p_small-block">Погашение займа 24 часа Без комиссии</p>
+          </div>
+          <div class="block-small">
+            <img
+              src="recurses/crown (1) 1.svg"
+              alt=""
+              class="logo_small-block"
+            />
+            <p class="p_small-block">Премиум услуги для постоянных клиентов</p>
+          </div>
+          <div class="block-small">
+            <img
+              src="recurses/stars (3) 1.svg"
+              alt=""
+              class="logo_small-block"
+            />
+            <p class="p_small-block">Улучшение кредитной истории</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-            <div class="block-options">
-                <p class="repayment">Способ погашения</p>
-                <p class="repayment">Зачисление</p>
-            </div>
+    <div class="conteiner-instructions">
+      <h2>Получите заём просто</h2>
 
-            <div class="block_conteiner-card">
-                <div class="conteiner-blocks">
-                    <div class="block-card">
-                        <img src="recurses/visa.png" alt="" class="logo-card">
-                        <p class="p-card">Банковской картой
-                            Visa/MasterCard/Мир
-                            в личном кабинете</p>
-                        <div class="time">
-                            <img src="recurses/timer (8) 1.svg" alt="" class="time-logo">
-                            <p class="p-time">Моментально</p>
-                        </div>
-                        <button class="btn-card">ПОГАСИТЬ</button>
-                    </div>
-    
-                    <div class="block-card">
-                        <img src="recurses/Logo_qiwi_rgb 1.png" alt="" class="logo-card">
-                        <p class="p-card">Через терминалы Qiwi</p>
-                        <div class="time">
-                            <img src="recurses/timer (8) 2.svg" alt="" class="time-logo">
-                            <p class="p-time">Моментально</p>
-                        </div>
-                        <button class="btn-card btn-soon">СКОРО</button>
-                    </div>
-    
-                    <div class="block-card">
-                        <img src="recurses/cyberplat.png" alt="" class="logo-card">
-                        <p class="p-card">Через терминалы CyberPlat</p>
-                        <div class="time">
-                            <img src="recurses/timer (8) 2.svg" alt="" class="time-logo">
-                            <p class="p-time">Моментально</p>
-                        </div>
-                        <button class="btn-card btn-soon">СКОРО</button>
-                    </div>
-    
-                    <div class="block-card">
-                        <img src="recurses/crone.png" alt="" class="logo-card">
-                        <p class="p-card">Через платежную систему
-                            "Золотая корона"</p>
-                        <div class="time">
-                            <img src="recurses/timer (8) 2.svg" alt="" class="time-logo">
-                            <p class="p-time">Моментально</p>
-                        </div>
-                        <button class="btn-card btn-soon">СКОРО</button>
-                    </div>
-                </div>
-            </div>
+      <div class="block-punkt_flex">
+        <div class="block-punkt">
+          <p class="number">1</p>
+          <div class="block_punkt-p">
+            <p class="punkt-p">Позвоните или оставьте заявку</p>
+            <p class="dop-p">
+              Оставить заявку можно
+              <a href="" class="blue">заполнив форму</a> на сайте
+            </p>
+          </div>
         </div>
 
-        <div class="conteiner-loan">
-            <h2 class="bottom">Получить заём прямо сейчас</h2>
+        <div class="block-punkt">
+          <p class="number">2</p>
+          <div class="block_punkt-p">
+            <p class="punkt-p">Дождитесь принятия решения</p>
+            <p class="dop-p">Решение принимается всего за 1 минуту</p>
+          </div>
+        </div>
 
-            <div class="loan-block_flex">
-                <img src="recurses/hand3 1.svg" alt="" class="hend-tel" loading="lazy">
+        <div class="block-punkt">
+          <p class="number">3</p>
+          <div class="block_punkt-p">
+            <p class="punkt-p">Получите деньги</p>
+            <p class="dop-p">Мы переведем Вам деньги на карту</p>
+          </div>
+        </div>
+      </div>
 
-                <div class="conteiner-form conteiner-form-two">
-                
-                    <form action="#!">
-                        <div class="block-cent">
-                            <legend>Необходимая сумма</legend>
-                            <input type="range" value="1000" min="1000" max="50000"
-                                oninput="this.nextElementSibling.value = this.value">
-                            <output>1000</output> <label for="text">рублей</label>
-                        </div>
-                        <div class="block-date">
-                            <legend>На какой срок</legend>
-                            <input type="range" value="1" min="10" max="365" oninput="this.nextElementSibling.value = this.value">
-                            <output>10</output> <label for="text">дней</label>
-                        </div>
-            
-                        <div class="form-text">
-                            <div class="cent">
-                                <p class="form-text-p">Дата возврата</p>
-                                <p class="form-nom">XX месяца, 20XX</p>
-                            </div>
-            
-                            <div class="cent">
-                                <p class="form-text-p">Сумма к возврату</p>
-                                <p class="form-nom"><span class="span-form">XXX руб.</span></p>
-                            </div>
-                        </div>
-            
-                        <button class="btn-yellow">ПОЛУЧИТЬ ДЕНЬГИ</button>
-                    </form>
-                </div>
+      <button class="btn-yellow btn_blocl-instru">оформить заявку</button>
+      <img
+        src="recurses/hand 1.svg"
+        alt=""
+        class="hend_con-instructions"
+        loading="lazy"
+      />
+    </div>
+
+    <div class="conteiner-cards">
+      <h2>Как погасить заём</h2>
+
+      <div class="block-options">
+        <p class="repayment">Способ погашения</p>
+        <p class="repayment">Зачисление</p>
+      </div>
+
+      <div class="block_conteiner-card">
+        <div class="conteiner-blocks">
+          <div class="block-card">
+            <img src="recurses/visa.png" alt="" class="logo-card" />
+            <p class="p-card">
+              Банковской картой Visa/MasterCard/Мир в личном кабинете
+            </p>
+            <div class="time">
+              <img src="recurses/timer (8) 1.svg" alt="" class="time-logo" />
+              <p class="p-time">Моментально</p>
+            </div>
+            <button class="btn-card">ПОГАСИТЬ</button>
+          </div>
+
+          <div class="block-card">
+            <img src="recurses/Logo_qiwi_rgb 1.png" alt="" class="logo-card" />
+            <p class="p-card">Через терминалы Qiwi</p>
+            <div class="time">
+              <img src="recurses/timer (8) 2.svg" alt="" class="time-logo" />
+              <p class="p-time">Моментально</p>
+            </div>
+            <button class="btn-card btn-soon">СКОРО</button>
+          </div>
+
+          <div class="block-card">
+            <img src="recurses/cyberplat.png" alt="" class="logo-card" />
+            <p class="p-card">Через терминалы CyberPlat</p>
+            <div class="time">
+              <img src="recurses/timer (8) 2.svg" alt="" class="time-logo" />
+              <p class="p-time">Моментально</p>
+            </div>
+            <button class="btn-card btn-soon">СКОРО</button>
+          </div>
+
+          <div class="block-card">
+            <img src="recurses/crone.png" alt="" class="logo-card" />
+            <p class="p-card">Через платежную систему "Золотая корона"</p>
+            <div class="time">
+              <img src="recurses/timer (8) 2.svg" alt="" class="time-logo" />
+              <p class="p-time">Моментально</p>
+            </div>
+            <button class="btn-card btn-soon">СКОРО</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="conteiner-loan">
+      <h2 class="bottom">Получить заём прямо сейчас</h2>
+
+      <div class="loan-block_flex">
+        <img
+          src="recurses/hand3 1.svg"
+          alt=""
+          class="hend-tel"
+          loading="lazy"
+        />
+
+        <div class="conteiner-form conteiner-form-two">
+          <form action="#!">
+            <div class="block-cent">
+              <legend>Необходимая сумма</legend>
+              <input
+                type="range"
+                value="1000"
+                min="1000"
+                max="50000"
+                oninput="this.nextElementSibling.value = this.value"
+              />
+              <output>1000</output> <label for="text">рублей</label>
+            </div>
+            <div class="block-date">
+              <legend>На какой срок</legend>
+              <input
+                type="range"
+                value="1"
+                min="10"
+                max="365"
+                oninput="this.nextElementSibling.value = this.value"
+              />
+              <output>10</output> <label for="text">дней</label>
             </div>
 
+            <div class="form-text">
+              <div class="cent">
+                <p class="form-text-p">Дата возврата</p>
+                <p class="form-nom">XX месяца, 20XX</p>
+              </div>
+
+              <div class="cent">
+                <p class="form-text-p">Сумма к возврату</p>
+                <p class="form-nom"><span class="span-form">XXX руб.</span></p>
+              </div>
             </div>
 
-            <div class="conteiner-questions">
-                <h2 class="bottom-q">Получить заём прямо сейчас</h2>
+            <button class="btn-yellow">ПОЛУЧИТЬ ДЕНЬГИ</button>
+          </form>
+        </div>
+      </div>
+    </div>
 
-               <div class="blocks-questions">
-                    <div class="block-question">
-                        <p class="p-que">Как мне оформить микрозайм</p>
+    <div class="conteiner-questions">
+      <h2 class="bottom-q">Получить заём прямо сейчас</h2>
 
-                        <button class="block-menu block-menu-active">
-                            <div class="menu-icon__line"></div>
-                            
-                            <div class="block-question-menu">
-                                <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, corporis? Iusto, molestiae laborum. 
-                                    Autem, fugiat! Recusandae tenetur qui molestiae, dicta numquam consequatur id earum odio, fugit hic corrupti obcaecati dolor.</p>
-                            </div>
-                        </button>
-                    </div>
+      <div class="blocks-questions">
+        <div class="block-question">
+          <p class="p-que">Как мне оформить микрозайм</p>
 
-                    <div class="block-question">
-                        <p class="p-que p-green">Что будет, если я просрочу платеж</p>
+          <button class="block-menu block-menu-active">
+            <div class="menu-icon__line"></div>
 
-                        <button class="block-menu block-menu-active">
-                            <div class="menu-icon__line"></div>
-                            
-                            <div class="block-question-menu">
-                                <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, corporis? Iusto, molestiae laborum. 
-                                    Autem, fugiat! Recusandae tenetur qui molestiae, dicta numquam consequatur id earum odio, fugit hic corrupti obcaecati dolor.</p>
-                            </div>
-                        </button>
-                    </div>
-
-                    <div class="block-question">
-                        <p class="p-que">Как мне оформить микрозайм</p>
-
-                        <button class="block-menu block-menu-active">
-                            <div class="menu-icon__line"></div>
-                            
-                            <div class="block-question-menu">
-                                <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, corporis? Iusto, molestiae laborum. 
-                                    Autem, fugiat! Recusandae tenetur qui molestiae, dicta numquam consequatur id earum odio, fugit hic corrupti obcaecati dolor.</p>
-                            </div>
-                        </button>
-                    </div>
-
-                    <div class="block-question">
-                        <p class="p-que">Что будет, если я просрочу платеж</p>
-
-                        <button class="block-menu block-menu-active">
-                            <div class="menu-icon__line"></div>
-                            
-                            <div class="block-question-menu">
-                                <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, corporis? Iusto, molestiae laborum. 
-                                    Autem, fugiat! Recusandae tenetur qui molestiae, dicta numquam consequatur id earum odio, fugit hic corrupti obcaecati dolor.</p>
-                            </div>
-                        </button>
-                    </div>
-
-                    <div class="block-question">
-                        <p class="p-que">Как погасить займ</p>
-
-                        <button class="block-menu block-menu-active">
-                            <div class="menu-icon__line"></div>
-                            
-                            <div class="block-question-menu">
-                                <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, corporis? Iusto, molestiae laborum. 
-                                    Autem, fugiat! Recusandae tenetur qui molestiae, dicta numquam consequatur id earum odio, fugit hic corrupti obcaecati dolor.</p>
-                            </div>
-                        </button>
-                    </div>
-
-                    <div class="block-question">
-                        <p class="p-que">Могу ли я продлить платежи</p>
-
-                        <button class="block-menu block-menu-active">
-                            <div class="menu-icon__line"></div>
-                            
-                            <div class="block-question-menu">
-                                <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, corporis? Iusto, molestiae laborum. 
-                                    Autem, fugiat! Recusandae tenetur qui molestiae, dicta numquam consequatur id earum odio, fugit hic corrupti obcaecati dolor.</p>
-                            </div>
-                        </button>
-                    </div>
-
-                    <div class="block-question">
-                        <p class="p-que">Как погасить займ</p>
-
-                        <button class="block-menu block-menu-active">
-                            <div class="menu-icon__line"></div>
-                            
-                            <div class="block-question-menu">
-                                <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, corporis? Iusto, molestiae laborum. 
-                                    Autem, fugiat! Recusandae tenetur qui molestiae, dicta numquam consequatur id earum odio, fugit hic corrupti obcaecati dolor.</p>
-                            </div>
-                        </button>
-                    </div>
-
-                    <div class="block-question">
-                        <p class="p-que">Могу ли я продлить платежи</p>
-
-                        <button class="block-menu block-menu-active">
-                            <div class="menu-icon__line"></div>
-                            
-                            <div class="block-question-menu">
-                                <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, corporis? Iusto, molestiae laborum. 
-                                    Autem, fugiat! Recusandae tenetur qui molestiae, dicta numquam consequatur id earum odio, fugit hic corrupti obcaecati dolor.</p>
-                            </div>
-                        </button>
-                    </div>
-                    
-                </div>
+            <div class="block-question-menu">
+              <p class="lorem">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,
+                corporis? Iusto, molestiae laborum. Autem, fugiat! Recusandae
+                tenetur qui molestiae, dicta numquam consequatur id earum odio,
+                fugit hic corrupti obcaecati dolor.
+              </p>
             </div>
+          </button>
+        </div>
 
-            
-            <script src="index.js"></script>
-</body>
+        <div class="block-question">
+          <p class="p-que p-green">Что будет, если я просрочу платеж</p>
+
+          <button class="block-menu block-menu-active">
+            <div class="menu-icon__line"></div>
+
+            <div class="block-question-menu">
+              <p class="lorem">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,
+                corporis? Iusto, molestiae laborum. Autem, fugiat! Recusandae
+                tenetur qui molestiae, dicta numquam consequatur id earum odio,
+                fugit hic corrupti obcaecati dolor.
+              </p>
+            </div>
+          </button>
+        </div>
+
+        <div class="block-question">
+          <p class="p-que">Как мне оформить микрозайм</p>
+
+          <button class="block-menu block-menu-active">
+            <div class="menu-icon__line"></div>
+
+            <div class="block-question-menu">
+              <p class="lorem">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,
+                corporis? Iusto, molestiae laborum. Autem, fugiat! Recusandae
+                tenetur qui molestiae, dicta numquam consequatur id earum odio,
+                fugit hic corrupti obcaecati dolor.
+              </p>
+            </div>
+          </button>
+        </div>
+
+        <div class="block-question">
+          <p class="p-que">Что будет, если я просрочу платеж</p>
+
+          <button class="block-menu block-menu-active">
+            <div class="menu-icon__line"></div>
+
+            <div class="block-question-menu">
+              <p class="lorem">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,
+                corporis? Iusto, molestiae laborum. Autem, fugiat! Recusandae
+                tenetur qui molestiae, dicta numquam consequatur id earum odio,
+                fugit hic corrupti obcaecati dolor.
+              </p>
+            </div>
+          </button>
+        </div>
+
+        <div class="block-question">
+          <p class="p-que">Как погасить займ</p>
+
+          <button class="block-menu block-menu-active">
+            <div class="menu-icon__line"></div>
+
+            <div class="block-question-menu">
+              <p class="lorem">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,
+                corporis? Iusto, molestiae laborum. Autem, fugiat! Recusandae
+                tenetur qui molestiae, dicta numquam consequatur id earum odio,
+                fugit hic corrupti obcaecati dolor.
+              </p>
+            </div>
+          </button>
+        </div>
+
+        <div class="block-question">
+          <p class="p-que">Могу ли я продлить платежи</p>
+
+          <button class="block-menu block-menu-active">
+            <div class="menu-icon__line"></div>
+
+            <div class="block-question-menu">
+              <p class="lorem">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,
+                corporis? Iusto, molestiae laborum. Autem, fugiat! Recusandae
+                tenetur qui molestiae, dicta numquam consequatur id earum odio,
+                fugit hic corrupti obcaecati dolor.
+              </p>
+            </div>
+          </button>
+        </div>
+
+        <div class="block-question">
+          <p class="p-que">Как погасить займ</p>
+
+          <button class="block-menu block-menu-active">
+            <div class="menu-icon__line"></div>
+
+            <div class="block-question-menu">
+              <p class="lorem">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,
+                corporis? Iusto, molestiae laborum. Autem, fugiat! Recusandae
+                tenetur qui molestiae, dicta numquam consequatur id earum odio,
+                fugit hic corrupti obcaecati dolor.
+              </p>
+            </div>
+          </button>
+        </div>
+
+        <div class="block-question">
+          <p class="p-que">Могу ли я продлить платежи</p>
+
+          <button class="block-menu block-menu-active">
+            <div class="menu-icon__line"></div>
+
+            <div class="block-question-menu">
+              <p class="lorem">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,
+                corporis? Iusto, molestiae laborum. Autem, fugiat! Recusandae
+                tenetur qui molestiae, dicta numquam consequatur id earum odio,
+                fugit hic corrupti obcaecati dolor.
+              </p>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="conteiner-publications">
+      <h2>Публикации</h2>
+
+      <div class="block-public_flex">
+        <div class="block-public">
+          <h3>Зарплата вперед - новый сервис от Platiza.ru</h3>
+          <p class="p-public">
+            МКК Платиза ООО объявляет о запуске нового сервиса Зарплата вперед и
+            продукта Зарплатный
+          </p>
+          <a href="" class="link-public">platiza.ru</a>
+        </div>
+
+        <div class="block-public">
+          <h3>Зарплата вперед - новый сервис от Platiza.ru</h3>
+          <p class="p-public">
+            МКК Платиза ООО объявляет о запуске нового сервиса Зарплата вперед и
+            продукта Зарплатный
+          </p>
+          <a href="" class="link-public">platiza.ru</a>
+        </div>
+
+        <div class="block-public">
+          <h3>Зарплата вперед - новый сервис от Platiza.ru</h3>
+          <p class="p-public">
+            МКК Платиза ООО объявляет о запуске нового сервиса Зарплата вперед и
+            продукта Зарплатный
+          </p>
+          <a href="" class="link-public">platiza.ru</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="conteiner-loans">
+      <h2>Какие у нас займы</h2>
+
+      <div class="block-public_flex">
+        <div class="block-public block-loan">
+          <img src="recurses/cash 1.svg" alt="" class="img-loans" />
+          <p class="p-loans">Займ до 200 000 тенге</p>
+        </div>
+
+        <div class="block-public block-loan">
+          <img src="recurses/car 1.svg" alt="" class="img-loans" />
+          <p class="p-loans">Автозайм</p>
+        </div>
+
+        <div class="block-public block-loan">
+          <img src="recurses/buildings (2) 1.svg" alt="" class="img-loans" />
+          <p class="p-loans">Под залог недвижимости</p>
+        </div>
+      </div>
+
+      <div class="block-p">
+        <pre>
+Platiza — это популярный российский онлайн-сервис мгновенной финансовой помощи. Здесь можно за минуту получить
+заём на небольшую сумму без похода в офис, справок с работы, имея под рукой только паспорт и телефон. 
+
+Мы предоставляем надёжное и безопасное решение людям, оказавшимся в экстренных финансовых ситуациях. 
+Внедряя эффективные технологии, мы создали сервис, который стал персональным финансовым помощником
+для всех наших клиентов.
+
+
+                </pre
+        >
+      </div>
+    </div>
+
+    <footer>
+      <p class="footer-p">
+        © 2011–2020 Микрокредитная компания «Платиза.ру» (общество с
+        ограниченной ответственностью). Все права защищены.
+      </p>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
 </html>
