@@ -646,3 +646,146 @@ footer {
   font-weight: 400;
   line-height: 20px;
 }
+@media (max-width: 1308px) {
+  .block-p {
+    margin: 0 auto;
+  }
+  .block-question {
+    margin: 0 auto;
+  }
+  .blocks-questions {
+    margin-left: 0px;
+  }
+  .conteiner-pros {
+    height: 1000px;
+  }
+}
+@media (max-width: 1214px) {
+  .block-punkt_flex {
+    margin-left: 410px;
+  }
+  .btn_blocl-instru {
+    margin-left: 38%;
+  }
+  .block-card {
+    width: 1000px;
+  }
+  .loan-block_flex {
+    width: 1000px;
+  }
+  .conteiner-form-two {
+    height: 570px;
+  }
+  .block-question {
+    width: 408px;
+  }
+  .block-p {
+    width: auto;
+  }
+}
+@media (max-width: 1125px) {
+  .block-punkt_flex {
+    margin-left: 330px;
+  }
+  .btn_blocl-instru {
+    margin-left: 37%;
+  }
+  .block-public {
+    padding: 19px 33px 13px 18px;
+    width: 300px;
+  }
+  .block-p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 1073px) {
+  .blocks-pros_flex {
+    padding: 20px;
+  }
+  .hend-tel {
+    margin-top: -10px;
+    width: 516px;
+  }
+}
+@media (max-width: 984px) {
+  .conteiner-form {
+    z-index: 10;
+  }
+  h1 {
+    margin-left: -20px;
+  }
+  .block-punkt_flex {
+    margin-left: 230px;
+  }
+  .btn_blocl-instru {
+    margin-left: 35%;
+  }
+  .block-card {
+    margin: 0 auto;
+    width: 900px;
+  }
+  .conteiner-form-two {
+    margin-left: -60px;
+  }
+  .loan-block_flex {
+    width: 900px;
+  }
+  .conteiner-form {
+    padding: 10px;
+    width: 386px;
+  }
+  .btn-yellow {
+    width: 365px;
+  }
+  .text-transf {
+    width: auto;
+  }
+  .li-menu {
+    font-size: 14px;
+  }
+  .big-block {
+    width: 290px;
+  }
+  .btn-yellow {
+    width: 186px;
+  }
+}
+@media (max-width: 886px) {
+  .block-card {
+    width: 800px;
+  }
+  .p-card {
+    font-size: 14px;
+  }
+  .p-time {
+    font-size: 14px;
+  }
+  .btn-card {
+    width: 173px;
+  }
+  .block-options {
+    gap: 143px;
+  }
+  .logo-card {
+    width: 120px;
+  }
+  .loan-block_flex {
+    width: 600px;
+  }
+  .conteiner-publications {
+    height: 1300px;
+  }
+  .block-public_flex {
+    gap: 20px;
+    flex-direction: column;
+  }
+  .conteiner-loans {
+    height: 1300px;
+  }
+  .img-hand {
+    display: none;
+  }
+  .block-text {
+    margin-left: 40px;
+  }
+}
