@@ -20,12 +20,30 @@
       <div class="inside-header">
         <img src="recurses/logo.svg" alt="логотип компании" class="logo" />
 
+        <button type="button" class="menu-icon">
+          <div class="menu-icon__line"></div>
+        </button>
+
         <div class="menu">
           <ul>
-            <li class="li-menu">О компании</li>
-            <li class="li-menu">Как получить деньги</li>
-            <li class="li-menu">Как погасить заём</li>
-            <li class="li-menu">Зарплата вперед</li>
+            <li class="li-menu">
+              <a href="#conteiner-pros" class="li-menu_link">О компании</a>
+            </li>
+            <li class="li-menu">
+              <a href="#conteiner-instructions" class="li-menu_link"
+                >Как получить деньги</a
+              >
+            </li>
+            <li class="li-menu">
+              <a href="#conteiner-cards" class="li-menu_link"
+                >Как погасить заём</a
+              >
+            </li>
+            <li class="li-menu">
+              <a href="#conteiner-publications" class="li-menu_link"
+                >Зарплата вперед</a
+              >
+            </li>
           </ul>
         </div>
 
@@ -37,6 +55,20 @@
           />
           <p class="open-p">Войти</p>
         </button>
+        <div class="block__button-open block__button-open_active">
+          <form action="" class="block__open-flex block__button-open_active">
+            <img
+              src="recurses/close-svgrepo-com.svg"
+              alt=""
+              class="close-btn"
+            />
+            <label for="">Введите ваш email</label>
+            <input type="email" class="email" required inputmode="email" />
+            <label for="">Введите ваш пароль</label>
+            <input type="password" class="password" required inputmode="text" />
+            <button class="btn__open-small-btn" type="submit">ВХОД</button>
+          </form>
+        </div>
       </div>
     </header>
 
@@ -114,7 +146,7 @@
       </div>
     </div>
 
-    <div class="conteiner-pros">
+    <div class="conteiner-pros" id="conteiner-pros">
       <h2>Наши преимущества</h2>
 
       <div class="blocks-pros_flex">
@@ -178,7 +210,7 @@
       </div>
     </div>
 
-    <div class="conteiner-instructions">
+    <div class="conteiner-instructions" id="conteiner-instructions">
       <h2>Получите заём просто</h2>
 
       <div class="block-punkt_flex">
@@ -211,15 +243,9 @@
       </div>
 
       <button class="btn-yellow btn_blocl-instru">оформить заявку</button>
-      <img
-        src="recurses/hand 1.svg"
-        alt=""
-        class="hend_con-instructions"
-        loading="lazy"
-      />
     </div>
 
-    <div class="conteiner-cards">
+    <div class="conteiner-cards" id="conteiner-cards">
       <h2>Как погасить заём</h2>
 
       <div class="block-options">
@@ -470,7 +496,7 @@
       </div>
     </div>
 
-    <div class="conteiner-publications">
+    <div class="conteiner-publications" id="conteiner-publications">
       <h2>Публикации</h2>
 
       <div class="block-public_flex">
