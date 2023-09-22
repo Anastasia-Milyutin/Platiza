@@ -962,6 +962,10 @@ footer {
   }
 }
 @media (max-width: 760px) {
+  .menu-active {
+    margin-left: -100px;
+    z-index: 999;
+  }
   .conteiner-form {
     height: 400px;
     margin-left: -300px;
@@ -998,6 +1002,10 @@ footer {
   }
 }
 @media (max-width: 728px) {
+  .menu-active {
+    margin-left: -100px;
+    z-index: 999;
+  }
   .conteiner-pros {
     height: 1700px;
   }
@@ -1014,6 +1022,10 @@ footer {
   }
 }
 @media (max-width: 703px) {
+  .menu-active {
+    margin-left: -100px;
+    z-index: 999;
+  }
   .block-text {
     margin-left: 0px;
   }
@@ -1033,6 +1045,10 @@ footer {
   }
 }
 @media (max-width: 590px) {
+  .menu-active {
+    margin-left: -100px;
+    z-index: 999;
+  }
   .logo-card {
     display: none;
   }
@@ -1048,6 +1064,10 @@ footer {
   }
 }
 @media (max-width: 530px) {
+  .menu-active {
+    margin-left: -100px;
+    z-index: 999;
+  }
   .conteiner-form {
     margin-left: -450px;
   }
@@ -1071,6 +1091,10 @@ footer {
   }
 }
 @media (max-width: 482px) {
+  .menu-active {
+    margin-left: -100px;
+    z-index: 999;
+  }
   .loan-block_flex {
     margin-top: 300px;
     height: 20px;
@@ -1082,6 +1106,10 @@ footer {
   }
 }
 @media (max-width: 450px) {
+  .menu-active {
+    margin-left: -100px;
+    z-index: 999;
+  }
   .blocks-pros_flex {
     align-items: center;
     justify-content: center;
@@ -1101,6 +1129,10 @@ footer {
   }
 }
 @media (max-width: 421px) {
+  .menu-active {
+    margin-left: -100px;
+    z-index: 999;
+  }
   .block-punkt_flex {
     margin-left: 10px;
   }
@@ -1111,5 +1143,102 @@ footer {
   }
   .btn_blocl-instru {
     margin-left: 29%;
+  }
+}
+@media (max-width: 390px) {
+  .menu-active {
+    margin-left: -100px;
+    z-index: 999;
+  }
+  .open-btn {
+    width: 122px;
+  }
+  .block-card {
+    width: 350px;
+  }
+  .block-options {
+    margin-left: -130px;
+    gap: 33px;
+  }
+  .block-question {
+    width: 348px;
+  }
+  .block-menu-active .block-question-menu {
+    margin-left: -325px;
+    width: 348px;
+  }
+  .conteiner-form {
+    width: 346px;
+    margin-left: -390px;
+  }
+
+  .conteiner-form-two {
+    margin-left: 10px;
+  }
+}
+@media (max-width: 368px) {
+  .menu-active {
+    margin-left: -100px;
+    z-index: 999;
+  }
+  h1 {
+    font-size: 52px;
+  }
+  .p-dop {
+    font-size: 16px;
+  }
+  .btn-green,
+  .bth-white {
+    width: 132px;
+  }
+  .conteiner-form {
+    width: 326px;
+    margin-left: -370px;
+  }
+  .conteiner-welcome {
+    height: 1100px;
+  }
+  .block-text {
+    height: 700px;
+    margin-bottom: -300px;
+    width: 250px;
+  }
+  .conteiner-form {
+    width: 326px;
+    margin-left: -270px;
+  }
+  .btn_blocl-instru {
+    margin-left: 23%;
+  }
+  .block-card {
+    width: 320px;
+  }
+  .btn-card {
+    width: 103px;
+  }
+  .conteiner-form-two {
+    margin-left: 5px;
+  }
+  .block-question {
+    width: 308px;
+  }
+  .p-que {
+    width: 245px;
+  }
+}
+@media (max-width: 340px) {
+  h2 {
+    font-size: 38px;
+  }
+  .block-options {
+    margin-left: -110px;
+    gap: 23px;
+  }
+  .conteiner-form-two {
+    margin-left: 0px;
+  }
+  .menu-active {
+    margin-left: -100px;
+    z-index: 999;
   }
 }
